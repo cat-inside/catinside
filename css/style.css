@@ -5,21 +5,21 @@
 body {
 	width: 1100px;
 	margin: 0 auto;
-	color: #FFFFFF;
+	color: #000;
 	font-family: 'Didact Gothic', sans-serif;
 	font-size: 12pt;
 	font-weight: 200;
 }
 
 a {
-	text-decoration: none;
-	color: #a2d5d3;
+	/*text-decoration: none;*/
+	color: #000; /* #a2d5d3;*/
 }
 
 
 h1 {
 	font-weight: bold;
-	color: rgba(0,0,0,0.8);
+	color: #000;
 	font-size: 2.5em;
 }
 
@@ -37,7 +37,7 @@ p {
 
 header {
 	padding: 5em 0em 7em 0em;
-	background: #FFFFFF /*背景画像の下の色*/ url(http://catinside.it/images/bg00.jpg) no-repeat top;
+	background: #FFFFFF /*背景画像の下の色*/ url(../images/card_page_.jpg) no-repeat top;
 	background-size: 100% auto;
 	height: 500px;
 }
@@ -63,13 +63,13 @@ nav a {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 0.8em;
-	color: rgba(255,255,255,0.80);
+	color: #000;
 }
 
 nav a.active {
 	border: 2px solid rgba(255,255,255,1);
 	border-radius: 6px;
-	color: rgba(255,255,255,1);
+	color: #000;
 }
 
 
@@ -88,6 +88,23 @@ figure {
 	/* font-size: 2em; */
 	color: rgba(255,255,255,0.60);
 }
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#grid {  /*product pageの画像表示*/
+	width: 710px;
+}
+
+li {
+	margin: 5px;
+	/*float: left;*/
+	list-style: none;
+}
+
 
 /* facebook, instagram buttons */
 div.social {
@@ -115,7 +132,16 @@ main {
 	line-height: 200%;
 }
 
+/*
+ol.contact {
+	list-style: none;
+}
+*/
+
+
+
 footer {
+	clear: both;
 	padding: 5em 0em;
 	border-top: 1px solid rgba(0,0,0,0.08);
 	background: url(http://catinside.it/images/cat-inside_PATTERN_fbCoverPage.jpg);
@@ -125,4 +151,17 @@ footer p {
 	text-align: center;
 	font-size: 1em;
 	color: black;
+}
+
+/*
+ * Shop
+ */
+
+div.shop-links {
+	padding: 5em 10em;
+}
+
+div.shop-links img {
+	float: left;
+	margin-right: 1.5em;
 }
